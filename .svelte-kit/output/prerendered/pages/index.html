@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/2.5ce68600.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.16a00934.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.eff21656.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.516932c0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.73d13d98.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.6b2454f2.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.02932c1f.js"><!-- HEAD_svelte-1s9kg0l_START --><link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.css"><!-- HEAD_svelte-1s9kg0l_END --><!-- HEAD_svelte-1s9kg0l_START --><link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.css"><!-- HEAD_svelte-1s9kg0l_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+<main>
+
+<svelte-scroller-outer class="svelte-xdbafy"><svelte-scroller-background-container class="background-container svelte-xdbafy" style="
+		position: absolute;
+		top: 0;
+		transform: translate(0, 0px);
+		z-index: 1;
+	"><svelte-scroller-background class="svelte-xdbafy"><div class="background svelte-ahelru" slot="background">
+    </div></svelte-scroller-background></svelte-scroller-background-container>
+
+	<svelte-scroller-foreground class="svelte-xdbafy"><div class="foreground svelte-ahelru" slot="foreground"><section class="svelte-ahelru"><div class="banner svelte-ahelru"><h1 class="svelte-ahelru">United States Olympic Journey</h1>
+        <h3 class="svelte-ahelru">The Olympics data contains information about medals won for each
+          sport, year, country, gender, and event between the period of
+          1976-2008 in the Summer Olympics.
+        </h3>
+        <p class="svelte-ahelru">Write Up: We plan to explore the U.S’s Olympics journey throughout the
+          years. So far, we have visualizations communicating general overviews
+          of Olympic medals concerning which medals earned for different
+          countries, years, events, etc. We have a hierarchical bar chart with
+          each hierarchy going into more detail regarding medaling information.
+          This one is a continuation of project 3, so several additional
+          interactions such as tooltips and querying are also implemented.
+          There’s also an additional visualization of a world map showing an
+          overview of location and year for different Olympics. There are 6
+          different visualizations/questions we’d like to explore, so the most
+          challenging part of the project to design will likely be creating all
+          6 with equal quality and good flow between each one. Specifically, a
+          visualization determining whether there’s a home advantage to hosting
+          the Olympics in a country’s home could be more challenging. To do so,
+          we need to determine percentage of medals earned for the home country
+          against all medals earned during that Olympics. That would be the y
+          axis, and each country would be the x axis. In addition to extra
+          calculations of the data for they axis, we need to figure out a way to
+          visualize that without overplotting since each country (each tick on
+          the x axis) would have several points.
+        </p></div></section>
+    <section class="svelte-ahelru">Data Exploration
+      <div class="data"></div>
+
+<main><script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <div id="chart-container" style="width: 100%; height: 85vh;" class="svelte-1chv7kg"><div class="tooltip svelte-1chv7kg" style="opacity: 0;"></div>
+    <div class="svelte-1chv7kg"><label class="gold-label svelte-1chv7kg"><input type="checkbox" checked> Gold
+        🥇
+      </label>
+      <label class="silver-label svelte-1chv7kg"><input type="checkbox" checked> Silver
+        🥈
+      </label>
+      <label class="bronze-label svelte-1chv7kg"><input type="checkbox" checked> Bronze
+        🥉
+      </label></div></div>
+</main></section>
+    <section class="svelte-ahelru">Where were olympics held?
+      
+
+<div class="map svelte-1qtsm4i"></div></section>
+    <section class="svelte-ahelru">U.S. Best Performing Sports</section>
+    <section class="svelte-ahelru">U.S. Best Performing Athletes</section>
+    <section class="svelte-ahelru">U.S. Gender Based Performance</section>
+    <section class="svelte-ahelru">Is there a home field advantage?</section>
+    <section class="svelte-ahelru">Closing Thoughts</section></div></svelte-scroller-foreground>
+</svelte-scroller-outer></main>
+
+
+			
+			<script>
+				{
+					__sveltekit_6k94la = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.16a00934.js"),
+						import("./_app/immutable/entry/app.73d13d98.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
